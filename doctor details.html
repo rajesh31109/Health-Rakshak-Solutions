@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Detials</title>
+    <style>
+    body
+    { 
+      background-color: #282A35;
+    }
+    .abcd
+    {
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+    }
+    .container 
+    {
+        background-color: #ffffff32;
+        width: 650px;
+        height: 250px;
+        text-align:left;
+        color: white;
+        margin-left: 360px;
+        margin-top: 80px;
+        border-radius: 20px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition:opacity 1s ease-in-out, transform 1s ease-in-out ;
+    }
+    .container.expand
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .heading1
+    {
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .points
+    {
+        padding-left: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 class="abcd"><u>How To Access Doctor Portal by Doctor?</u></h1>
+    <div class="container" id="content">
+        <h2 class="heading1">Steps to access doctor portal</h2>
+            <p class="points">- Click the Login button and select the Doctor option.</p>
+            <p class="points">- Enter the doctor’s credentials, such as the ID number and card number.</p>
+            <p class="points">- Enter the Patient’s HRC card number and click the Submit button.</p>
+            <p class="points">- Fill in the prescription details provided by the doctor</p>
+            <p class="points">- Finally, click the Submit button. The prescription will be automatically stored in the database.</p>
+        </div>
+
+        <script>
+                window.onload = function () {
+      // Animate the vertical line first
+      setTimeout(() => {
+        document.getElementById("content").classList.add("expand");
+      }, 3000);
+    };
+        </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+    body
+        {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-page
+        {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: #26357b;
+            color: white;
+            padding: 10px 30px;
+            font-size: 14px;
+            padding-left: 650px;
+            font-size: 18px;
+            font-family: italic;
+            cursor: pointer;
+        }
+        .top-page .log-button
+         {
+            width: 60px;
+            height: 30px;
+            font-weight: bold;
+            border: none;
+            font-size: 13px;
+            border-radius: 5px;
+            transition: 2s;
+            cursor: pointer;
+            transition: 1s;
+         }
+         .top-page .log-button:hover
+          {
+            background-color: #26357b;
+            color: white;
+            font-family: 'Source Sans Pro Topnav', sans-serif;
+          }
+         .top-page .sign-button
+         {
+            width: 70px;
+            height: 30px;
+            font-weight: bold;
+            border: none;
+            font-size: 13px;
+            border-radius: 5px;
+            transition: 1s;
+            cursor: pointer;
+         }
+         .top-page .sign-button:hover
+         {
+          background-color: #26357b;
+          color: white;
+          font-family: 'Source Sans Pro Topnav', sans-serif;
+         }
+         .top-page .booking-but
+         {
+          width: 180px;
+            height: 30px;
+            font-weight: bold;
+            border: none;
+            font-size: 13px;
+            border-radius: 5px;
+            transition: 1s;
+            cursor: pointer;
+         }
+         .top-page .booking-but:hover
+         {
+          background-color: #26357b;
+          color: white;
+          font-family: 'Source Sans Pro Topnav', sans-serif;
+         }
+         .doc
+         {
+            width: 1370px;
+            height: 565px;
+            object-fit: cover;
+         }
+         .quatation
+         {
+            margin-top: -400px;
+            margin-left: 100px;
+            font-family: bold;
+            font-size: 35px;
+         }
+         .als
+         {
+            margin-left:100px ;
+            font-size: 15px;
+            color: #9A9A9A;
+            font-family: times 'Times New Roman', Times, serif;
+           line-height: 25px;
+         }
+         .website-name
+          {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            padding-left: 30px;
+            margin-top: -470px;
+            margin-left: 100px;
+            font-family: Arial, sans-serif;
+            line-height: 20px;
+            padding-top: 30px;
+          }
+          .website-name .Web
+          {
+            font-weight: bold;
+            color: #26357b;
+            font-size: 25px;
+          }
+          .website-name .med
+          {
+            font-weight: bold;
+            color: #43a62d;
+            font-size: 25px;
+          }
+          .website-name .health-sentence
+          {
+            color: rgb(105,105,105);
+          }
+          .plus 
+          {
+           color: white;
+           background: #008000;
+           padding: 0px 4px;
+           border-radius: 4px;
+           font-size: 30px;
+         }

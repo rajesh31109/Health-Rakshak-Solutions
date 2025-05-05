@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f7fa;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin-left: 350px;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2d89ef;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #2d89ef;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #1b65c1;
+    }
+
+  p {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Online Appointment Booking</h2>
+    <form id="appointmentForm">
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" placeholder="Your age" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <select required>
+          <option value="">Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Contact Number</label>
+        <input type="text" placeholder="Mobile number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Email (optional)">
+      </div>
+
+      <div class="form-group">
+        <label>HRC Card Number</label>
+        <input type="text" placeholder="Enter card ID (if any)">
+      </div>
+
+     
+      <div class="form-group">
+        <label>State</label>
+        <select id="state" required>
+          <option value="">Select State</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Telangana">Telangana</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>District</label>
+        <select id="district" required>
+          <option value="">Select District</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Hospital</label>
+        <select id="hospital" required>
+          <option value="">Select Hospital</option>
+        </select>
+      </div>
+      
+
+
+      <div class="form-group">
+        <label>Department</label>
+        <select required>
+          <option value="">Select Department</option>
+          <option>General Medicine</option>
+          <option>Cardiology</option>
+          <option>Orthopedics</option>
+          <option>Dermatology</option>
+          <option>Neurology</option>
+          <option>NA</option>
+        </select>
+      </div>
+
+    
+
+      <div class="form-group">
+        <label>Preferred Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="form-group">
+        <label>Preferred Time</label>
+        <input type="time" required>
+      </div>
+
+      <div class="form-group">
+        <label>Reason for Visit</label>
+        <textarea rows="4" placeholder="Brief description of symptoms..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Confirm Appointment</button>
+
+    </form>
+  </div>
+
+
+  <script>
+    const stateSelect = document.getElementById("state");
+    const districtSelect = document.getElementById("district");
+    const hospitalSelect = document.getElementById("hospital");
+  
+    const districtOptions = {
+      "Andhra Pradesh": ["Guntur", "NTR"],
+      "Telangana": ["Warangal", "Hyderabad"]
+    };
+  
+    const hospitalsData = {
+      "Guntur": [
+        "Government General Hospital S.O, Opp. Railway Station, Guntur · 0863 222 0035",
+        "Government Hospital, Amaravathi To Vijayawada Road, Tulluru, Guntur",
+        "Dhruthi Hospital - General Medicine, Gowri Shankar Theater Rd, Kothapet, Guntur · 098581 90190"
+      ],
+      "NTR": [
+        "Government General Hospital, Near Medical College, Beside NTR Health University, Vijayawada",
+        "Sunrise Hospitals, Bellapu Sobhanadri Road, Near Pushpa Hotel Centre, Vijayawada · 0866 243 4646",
+        "Manipal Super Speciality Hospital, NH-5, Tadepalli, Guntur, Vijayawada · 0866 246 9700"
+      ],
+      "Warangal": [
+        "Kakatiya Medical College Hospital",
+        "MGM Hospital"
+      ],
+      "Hyderabad": [
+        "Osmania General Hospital",
+        "Gandhi Hospital"
+      ]
+    };
+  
+    // Populate Districts
+    stateSelect.addEventListener("change", function () {
+      const selectedState = this.value;
+      districtSelect.innerHTML = `<option value="">Select District</option>`;
+      hospitalSelect.innerHTML = `<option value="">Select Hospital</option>`;
+  
+      if (districtOptions[selectedState]) {
+        districtOptions[selectedState].forEach(district => {
+          const option = document.createElement("option");
+          option.value = district;
+          option.textContent = district;
+          districtSelect.appendChild(option);
+        });
+      }
+    });
+  
+    // Populate Hospitals when district changes
+    districtSelect.addEventListener("change", function () {
+      const selectedDistrict = this.value;
+      hospitalSelect.innerHTML = `<option value="">Select Hospital</option>`;
+  
+      if (hospitalsData[selectedDistrict]) {
+        hospitalsData[selectedDistrict].forEach(hospital => {
+          const option = document.createElement("option");
+          option.value = hospital;
+          option.textContent = hospital;
+          hospitalSelect.appendChild(option);
+        });
+      }
+    });
+  
+    // Form validation and confirmation
+    const form = document.getElementById("appointmentForm");
+  
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Stop default form submission
+  
+      const inputs = form.querySelectorAll("input[required], select[required]");
+      let allFilled = true;
+  
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          allFilled = false;
+        }
+      });
+  
+      if (!allFilled) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+  
+      const isConfirmed = confirm("Are you sure you want to confirm the appointment?");
+      if (isConfirmed) {
+        const successMsg = document.createElement("p");
+        successMsg.textContent = "✅ Your appointment is booked successfully!";
+        successMsg.style.color = "green";
+        successMsg.style.textAlign = "center";
+        successMsg.style.fontWeight = "bold";
+        successMsg.style.marginTop = "20px";
+  
+        form.style.display = "none";
+        form.parentElement.appendChild(successMsg);
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>

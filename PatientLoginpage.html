@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="CSS folders/Patientloginpage.css">
+</head>
+<body>
+    <div class="login-box active" id="loginbox">
+        <span class="cross-symbol" onclick="closeLoginBox()">&times;</span>
+        <h2 class="log-sentence">Log In</h2>
+        <p class="sen">Don't have an account?<span class="sign" onclick="clicksignup()">Sign up</span></p><br>
+        <button class="google">Google <img class="logo"  src="images/google logo.png"></button>
+        <button class="face-but">Facebook<img class="face-logo" src="images/facebook logo.png"></button><br><br>
+        <input type="text" class="card" placeholder="Enter Card number"><br>
+        <p class="or">OR</p>
+        <input type="text" class="email" placeholder="Email or Phone number"><br><br>
+        <input type="text" class="password" placeholder="OTP"><br><br>
+      
+        <button class="login-but" onclick="clicklogin()">Login</button>
+    </div>
+     
+    <h2 class="log-sen">Welcome <br>To Login Page --</h2>
+    <div class="track">
+        <img class="mark-logo" src="images/mark logo.png" alt="Mark Logo">
+        <b>Track the health Records</b>
+      </div>
+      <div class="track">
+        <img class="mark-logo" src="images/mark logo.png" alt="Mark Logo">
+        <b>Get the online appointment</b>
+      </div>
+      <div class="track">
+        <img class="mark-logo" src="images/mark logo.png" alt="Mark Logo">
+        <b>Healthcare Services at Your Doorstep</b>
+      </div>
+      <div class="track">
+        <img class="mark-logo" src="images/mark logo.png" alt="Mark Logo">
+        <b>Access Schemes via Website</b>
+      </div>
+      <div class="track">
+        <img class="mark-logo" src="images/mark logo.png" alt="Mark Logo">
+        <b>Scheduled Health Reminders by Phone</b>
+      </div>
+      <div class="track">
+        <img class="mark-logo" src="images/mark logo.png" alt="Mark Logo">
+        <b>Medicine Delievery</b>
+      </div>
+      <div class="track">
+        <img class="mark-logo" src="images/mark logo.png" alt="Mark Logo">
+        <b>Live Appointment Token Updates Reduce Crowd</b>
+      </div>
+    <script>
+        function closeLoginBox() 
+        {
+            window.location.href = "http://127.0.0.1:5500/HomePage.html";
+        }   
+        function clicksignup()
+        {
+          window.location.href="http://127.0.0.1:5500/Patient%20signup%20page.html";
+        }
+        function clicklogin() {
+        // Get input values
+        const card = document.querySelector('.card').value.trim();
+        const email = document.querySelector('.email').value.trim();
+        const otp = document.querySelector('.password').value.trim();
+
+        // Check if all fields are empty
+        if (card === "" && email === "" && otp === "") {
+            alert("Please enter the details");
+            return; // Stop function here
+        }
+
+        // Proceed with login if at least one field is filled
+        window.location.href = "http://127.0.0.1:5500/Services.html";
+    }
+    </script>
+</body>
+</html>

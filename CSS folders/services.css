@@ -1,0 +1,164 @@
+            body
+            {
+                background-color: #282A35;
+            }
+            .Services
+            {
+                font-family:  sans-serif;
+                color: #FFF4A3;
+                font-weight: bold;
+                font-size: 28px;
+                margin-top: 70px;
+                margin-left: 110px;
+                display: block;
+            }
+            .quotation
+            {
+                margin-left: 110px;
+                color: white;
+                font-family: "Source Sans Pro",sans-serif;
+            }
+            .health
+            {
+                background-color: #ffffff32;
+                color: #FFF4A3;
+                width: 260px;
+                height: 160px;
+                margin-left: 100px;
+                margin-top: 30px;
+                border-radius: 10px;
+            }
+            .health:hover
+            {
+                background-color: black;
+            }
+            .heading1
+            {
+                padding-left: 18px;
+                padding-top: 25px;
+                font-family: sans-serif;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .sentence1
+            {
+                color: white;
+                font-family: sans-serif;
+                font-size: 15px;
+                padding-left: 18px;
+                margin-top: -30px;
+            }
+            .patient
+        {
+            background-color: #ffffff32;
+            color: #FFF4A3;
+            width: 260px;
+            height: 160px;
+            margin-left: 420px;
+            margin-top: -176px;
+            border-radius: 10px;
+        }
+        .patient:hover
+        {
+            background-color: black;
+        }
+        .Doctor
+        {
+            background-color: #ffffff32;
+            color: #FFF4A3;
+            width: 260px;
+            height: 160px;
+            margin-left: 740px;
+            margin-top: -176px;
+            border-radius: 10px; 
+        }
+        .Doctor:hover
+        {
+            background-color: black;
+        }
+        .Disputes
+        {
+            background-color: #ffffff32;
+            color: #FFF4A3;
+            width: 260px;
+            height: 160px;
+            margin-left: 1050px;
+            margin-top: -176px;
+            border-radius: 10px; 
+        }
+        .Disputes:hover
+        {
+            background-color: black;
+        }
+        .Treatment
+        {
+            background-color: #ffffff32;
+            color: #FFF4A3;
+            width: 260px;
+            height: 162px;
+            margin-left: 98px;
+            margin-top:-16px;
+            border-radius: 10px; 
+        } 
+        .Treatment:hover
+        {
+            background-color: black;
+        }
+        .LS
+        {
+            background-color: #ffffff32;
+            color: #FFF4A3;
+            width: 260px;
+            height: 162px;
+            margin-left: 420px;
+            margin-top:-179px;
+            border-radius: 10px; 
+        }
+        .LS:hover
+        {
+            background-color: black;
+        }
+        .News
+        {
+          background-color: #ffffff32;
+            color: #FFF4A3;
+            width: 260px;
+            height: 162px;
+            margin-left: 740px;
+            margin-top:-179px;
+            border-radius: 10px; 
+        }
+        .News:hover
+        {
+            background-color: black;
+        }
+        .Contact
+        {
+          background-color: #ffffff32;
+            color: #FFF4A3;
+            width: 260px;
+            height: 162px;
+            margin-left: 1051px;
+            margin-top:-179px;
+            border-radius: 10px; 
+            cursor: pointer;
+        }
+        .Contact:hover
+        {
+            background-color: black;
+            
+        }
+        .Emergency
+        {
+          margin-top: -30px;
+          color: white;
+          margin-left: 20px;
+        }
+        .dist
+        {
+          margin-left: 20px;
+        }
+        .dist1
+        {
+          margin-left: 45px;
+        }

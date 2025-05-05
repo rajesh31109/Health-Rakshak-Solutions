@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRC Home Page</title>       
+    <link rel="stylesheet" href="CSS folders/Homepage.css">
+</head>
+<body>
+    <div class="top-page">
+       <p onclick="home()">Home</p>
+       <p onclick="about()" target="_blank">About</p>
+       <p onclick="feature()" target="_blank">Features</p>
+       <p onclick="services()" target="_blank">Services</p>
+       <button class="log-button" onclick="clicklogin()">Login</button>
+       <button class="sign-button" onclick="clicksignup()">Signup</button>
+       <button class="booking-but" onclick="clickbook()">Booking Appoinment</button>
+    </div>
+    <img class="doc" src="images/doctor2.jpg">
+    <h1 class="quatation">Making Health <br>
+        <span>Care Better Together</span></h1>
+    <p class="als">Also you dry creeping beast multiplity fourth abundantly our itsel signs<br>
+                  bring our. Won from living. whose dry you seasons divide given<br>
+                  gathering great in whose you'll greaterlet live in form beast sinthete<br>
+                  better together these place absolute right</p>
+
+    <div class="website-name">
+           <p> <span class="Web">HRC<span class="med">Med</span> <span class="plus">+</span></span><br>
+               <span class="health-sentence"> Health Rakshak Solutions</span></p>
+    </div>       
+
+    <script>
+        function clicksignup()
+        {
+            window.location.href="http://127.0.0.1:5500/Patient%20signup%20page.html";
+        }
+        function home()
+        {
+            window.location.href="http://127.0.0.1:5500/HomePage.html";
+        }
+        function about()
+        {
+            window.location.href="http://127.0.0.1:5500/About%20me%20page.html";
+        }
+        function feature()
+        {
+            window.location.href="http://127.0.0.1:5500/Features.html";
+        }
+        function services()
+        {
+            window.location.href="http://127.0.0.1:5500/Services.html";
+        }
+
+        function clicklogin() {
+    let role = prompt("Please enter your role: Doctor or Patient").toLowerCase();
+
+    if (role === "doctor") {
+      window.location.href = "http://127.0.0.1:5500/doctor%20Credentials.html";
+    } else if (role === "patient") {
+      window.location.href = "http://127.0.0.1:5500/PatientLoginpage.html";
+    } else {
+      alert("Invalid input! Please enter either 'Doctor' or 'Patient'.");
+    }
+  }
+
+     function clickbook()
+     {
+        window.location.href="http://127.0.0.1:5500/online%20appointment.html";
+     }
+    </script>
+</body>
+</html>

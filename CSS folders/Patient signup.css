@@ -1,0 +1,220 @@
+body
+{
+    background-color: #282A35;
+    align-content: center;
+}
+.signup-box
+{
+    
+    background-color: white;
+    margin-left: 670px;
+    margin-top: 80px;
+    width: 550px;
+    height:500px ;
+    border-radius:7px;
+}
+.signup-box .cross-symbol1
+{
+    font-size: 35px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 490px;
+    cursor: pointer;
+    line-height: 50px;
+}
+.signup-box .log-sentence1
+{
+    
+    padding-top: 70px;
+    padding-left: 40px;
+    font-family: Arial;
+    font-size: 27px;
+    font-style: absolute;
+    line-height: 30px;
+}  
+.signup-box .sen1
+{
+    line-height: 30px;
+    padding-left: 275px;
+    font-weight: bold;
+    color: #3d433f;
+    font-size: 17;
+    line-height: 0px;
+}
+.signup-box .sign1
+{
+   color: #1b2b70;
+   font-weight: bolder;
+   cursor: pointer;
+}
+.signup-box .google1
+{
+    margin-left: 140px;
+    width: 120px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    font-size: 14px;
+    transition: 1s;
+    vertical-align: middle;
+}
+.signup-box .google1:hover
+{
+    background-color: #1b2b70;
+    color: white;
+}
+.signup-box .logo1
+{
+width: 20px;
+padding-left: 10px;
+vertical-align: middle;
+image-orientation: 10px;
+}
+.signup-box .face-but1
+{
+   margin-left: 5px;
+    width: 120px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    font-size: 14px;
+    transition: 1s;
+    vertical-align: middle;
+}
+.signup-box .face-but1:hover
+{
+    background-color: #1b2b70;
+    color: white;
+}
+.signup-box .face-logo1
+{
+    width: 15px;
+    padding-left: 10px;
+    vertical-align: middle;
+    image-orientation: 10px;
+}
+.signup-box .name
+{
+    line-height: 20px;
+    margin-left: 30px;
+    margin-top: -10px;
+    width: 140px;
+    padding: 5px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}     
+.signup-box .date
+{
+    line-height: 20px;
+    margin-top: -10px;
+    margin-left: 40px;
+    width: 140px;
+    padding: 4.3px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center; 
+    vertical-align: center;
+}
+.signup-box .state
+{
+    line-height: 20px;
+    margin-left: 30px;
+    width: 140px;
+    padding: 5px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}  
+.signup-box .district
+{
+    line-height: 20px;
+   
+    margin-left: 40px;
+    width: 140px;
+    padding: 4.3px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center; 
+    vertical-align: center;
+}
+.signup-box .Aadhar
+{
+    line-height: 20px;
+    margin-left: 30px;
+    width: 140px;
+    padding: 5px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}  
+.signup-box .number
+{
+    line-height: 20px;
+    margin-left: 40px;
+    width: 140px;
+    padding: 4.3px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center; 
+    vertical-align: center;
+}
+.signup-box .Address
+{
+    line-height: 20px;
+    margin-left: 30px;
+    width: 390px;
+    padding: 5px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}  
+.signup-box .Sign-button
+{
+    margin-left: 165px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1b2b70;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.log-sen1
+{
+color: white;
+margin-top: -400px;
+margin-left: 100px;
+font-weight: bold;
+}
+.mark-logo1
+{
+width: 30px;
+margin-left: 100px;
+margin-right: 10px;
+height: auto;
+}
+.track1 
+{
+display: flex;
+align-items: center;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

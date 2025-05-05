@@ -1,0 +1,178 @@
+body{
+    background-color: #282A35;
+    align-content: center;
+}
+.login-box
+{
+    
+    background-color: white;
+    margin-left: 670px;
+    margin-top: 80px;
+    width: 550px;
+    height:500px ;
+    border-radius:7px;
+}
+.login-box .cross-symbol
+{
+    font-size: 35px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 490px;
+    cursor: pointer;
+    line-height: 50px;
+}
+.login-box .log-sentence
+{
+    
+    padding-top: 70px;
+    padding-left: 40px;
+    font-family: Arial;
+    font-size: 27px;
+    font-style: absolute;
+    line-height: 30px;
+}  
+.login-box .sen
+{
+    line-height: 30px;
+    padding-left: 275px;
+    font-weight: bold;
+    color: #3d433f;
+    font-size: 17;
+    line-height: 0px;
+}
+.login-box .sign
+{
+   color: #1b2b70;
+   font-weight: bolder;
+   cursor: pointer;
+}
+.login-box .google
+{
+    margin-left: 140px;
+    width: 120px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    font-size: 14px;
+    transition: 1s;
+    vertical-align: middle;
+}
+.login-box .google:hover
+{
+    background-color: #1b2b70;
+    color: white;
+}
+.login-box .logo
+{
+width: 20px;
+padding-left: 10px;
+vertical-align: middle;
+image-orientation: 10px;
+}
+.login-box .face-but
+{
+   margin-left: 5px;
+    width: 120px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    font-size: 14px;
+    transition: 1s;
+    vertical-align: middle;
+}
+.login-box .face-but:hover
+{
+    background-color: #1b2b70;
+    color: white;
+}
+.login-box .face-logo
+{
+    width: 15px;
+    padding-left: 10px;
+    vertical-align: middle;
+    image-orientation: 10px;
+}
+.login-box .card
+{
+    line-height: 20px;
+    margin-left: 165px;
+    margin-top: 30px;
+    width: 150px;
+    padding: 5px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+   
+}     
+.login-box .or{
+  color:#b69f9f;
+  line-height: 0px;
+  text-align: center;
+  margin-left: -15px;
+}
+.login-box .email
+{
+line-height: 20px;
+    margin-left: 137px;
+    width: 150px;
+    padding: 7px 60px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+.login-box .password
+{
+line-height: 20px;
+    margin-left: 137px;
+    width: 150px;
+    padding: 7px 60px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;       
+}
+
+.login-box .login-but
+{
+margin-left: 225px;
+width: 100px;
+height: 30px;
+background-color: #1b2b70;
+border: 1px solid#ccc;
+border-radius: 14px;
+color:white;
+font-weight: Arial;
+font-weight: bold;
+cursor: pointer;
+}
+.log-sen
+{
+color: white;
+margin-top: -400px;
+margin-left: 100px;
+font-weight: bold;
+}
+.mark-logo
+{
+width: 30px;
+margin-left: 100px;
+margin-right: 10px;
+height: auto;
+}
+.track 
+{
+display: flex;
+align-items: center;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

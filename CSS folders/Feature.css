@@ -1,0 +1,206 @@
+body
+{
+   background-color: #282a35;
+   height: 1250px;
+}
+.image1
+{
+    width: 280px;
+    height: 240px;
+    margin-left: 120px;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+.heading1
+{
+color: white;
+margin-left: 150px;
+
+}
+.mark-logo
+{
+width: 30px;
+margin-left: 110px;
+margin-right: 10px;
+height: auto;
+}
+.track 
+{
+display: flex;
+align-items: center;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  .vl  
+{
+border-left: 6px solid #43a62d;
+height: 0;
+position: absolute;
+left: 37%;
+top: 50px;
+transform: translateX(-50%);
+border-radius: 10px;
+transition: height 1.5s ease-in-out;
+}
+.vl.expand 
+{
+  height: 81vh;
+}
+
+
+.image-container
+{
+    position: relative;
+    height: 300px;
+}
+.image2
+{
+ width: 280px;
+ height: 240px;
+ margin-left: 720px;
+ margin-top: -520px;
+ border-radius: 50px;
+ position: absolute;
+ transform: translateX(-50%);
+ cursor: pointer;
+}
+.heading2
+{
+ color: white;
+ margin-left: 650px;
+ margin-top: -558px;
+}
+.mark-logo1
+ {
+ width: 30px;
+ margin-left: 580px;
+ height: auto;
+ }
+ .track1 
+ {
+ display: flex;
+ align-items: center;
+ color: white;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.vl2 {
+  border-left: 6px solid #43a62d;
+  height: 0;
+  position: absolute;
+  left: 70%;
+  top: 50px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  transition: height 1.5s ease-in-out;
+}
+
+.vl2.expand2 {
+  height: 81vh;
+}
+
+.image-container1 .image3
+{
+  width: 280px;
+  height: 240px;
+  border-radius: 50px;
+  margin-left: 1150px;
+  margin-top: -482px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.heading3
+{
+  margin-left: 1050px;
+  color:white;
+  margin-top: -221px;
+}
+
+.track2 
+  {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .mark-logo2
+    {
+     width: 30px;
+     margin-left: 1030px;
+     height: auto;
+   }
+
+   .image-container2 .image4
+   {
+     width: 280px;
+     height: 240px;
+     border-radius: 50px;
+     margin-top: 0px;
+     margin-left: 220px;
+     margin-top: 95px;
+   }
+   .heading4
+   {
+     color: white;
+     margin-left: 280px;
+     margin-top: -10px;
+   }
+   .track3
+   {
+     display: flex;
+     align-items: center;
+     color: white;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .mark-logo3
+   {
+     width: 30px;
+     margin-left: 250px;
+     height: auto;
+   }
+   .vl3
+   {
+     border-left: 6px solid #43a62d;
+     height: 0;
+     position: absolute;
+     left: 49%;
+     top: 660px;
+     transform: translateX(-50%);
+     border-radius: 10px;
+     transition: height 1.5s ease-in-out;
+   }
+   .vl3.expand3
+   {
+     height: 81vh;
+   }
+   .image-container3 .image5
+       {
+        width: 280px;
+        height: 240px;
+        margin-left: 950px;
+        margin-top: -476px;
+        border-radius: 50px;
+        position: absolute;
+        transform: translateX(-50%);
+       }
+       .heading5
+       {
+        color: white;
+        margin-left: 900px;
+        margin-top: -220px;
+       }
+      .track4
+      {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .mark-logo4
+      {
+        width: 30px;
+        margin-left: 820px;
+        height: auto;
+      }

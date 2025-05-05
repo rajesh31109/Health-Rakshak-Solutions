@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me Page</title>
+  <link rel="stylesheet" href="CSS folders/About me page.css">
+</head>
+<body>
+
+  <div class="vl" id="line"></div>
+
+  <h2 class="heading fade-item">A Smarter Way to Manage Your Health Journey</h2>
+  <img class="bar fade-item" src="images/bargraph.png"><br>
+
+  <div class="main-points">
+    <h4 class="fade-item"><span class="size">&#9755;</span> Enhanced Digitalization in Hospitals through Smart Systems</h4>
+    <h4 class="fade-item"><span class="size">&#9755;</span> Improved Health Record Accessibility for All Users</h4>
+    <h4 class="fade-item"><span class="size">&#9755;</span> Efficient Fraud Prevention with Secured Health Data</h4>
+    <h4 class="fade-item"><span class="size">&#9755;</span> Optimized Medicine Distribution Across All Facilities</h4>
+    <h4 class="fade-item"><span class="size">&#9755;</span> Boosted Public Trust in Government Health Services</h4>
+  </div>
+
+  <div class="About-content">
+    <h4 class="fade-item"><span class="styles">Project Title:</span> Health Rakshak card</h4>
+    <h4 class="fade-item"><span class="styles">Project Aim:</span> Secure Nationwide Lifelong Records</h4>
+    <h4 class="fade-item"><span class="styles">Vision:</span> Transparent, Seamless Patient-Provider Interaction</h4>
+    <h4 class="fade-item"><span class="styles">Technology Stack:</span> Built through front-end and back-end technologies.</h4>
+    <h4 class="fade-item"><span class="styles">Scheme Integration:</span> Unified access to Indian government health schemes.</h4>
+  </div>
+
+  <img class="future-image fade-item" src="images/future five years image.webp">
+
+  <script>
+    window.onload = function () {
+      // Animate the vertical line first
+      setTimeout(() => {
+        document.getElementById("line").classList.add("expand");
+      }, 2000);
+
+      // Reveal each fade-item one by one after 3 seconds
+      setTimeout(() => {
+        const items = document.querySelectorAll(".fade-item");
+        items.forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.add("visible");
+          }, index * 300); // 300ms delay between items
+        });
+      }, 3000);
+    };
+  </script>
+</body>
+</html>

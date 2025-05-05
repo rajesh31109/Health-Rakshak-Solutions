@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <link rel="stylesheet" href="CSS folders/services.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+ 
+    <div class="Services">All Our Services</div>
+  
+    <p class="quotation">Connecting people to better care — anytime, anywhere, with the power of one card.</p>
+
+
+
+    <div class="health">
+        <p class="heading1">Health Records Access</p><br><br>
+        <p class="sentence1">Access your entire medical history, from birth to the end of life, in one place.</p>
+    </div>
+    
+  <div class="patient">
+    <p class="heading1" onclick="clicklogin1()">Patient Credentials</p><br><br>
+    <p class="sentence1">Patient credentials enable appointments, record access, news, and scheme checks</p>
+  </div>
+
+  <div class="Doctor">
+    <p class="heading1" onclick="clickdoctor()">Doctor Credentials</p><br><br>
+    <p class="sentence1">Doctor credentials prevent fraud and record patient data and prescriptions.</p>
+  </div>
+
+  <div class="Disputes">
+    <p class="heading1">Minimizing Disputes</p><br><br>
+    <p class="sentence1">HRC minimizes doctor-patient disputes and ensures proper medicine distribution.</p>
+   </div><br><br>
+
+  <div class="Treatment">
+        <p class="heading1">Home-Based Treatment</p><br><br>
+        <p class="sentence1">Home treatment for elderly and disabled unable to visit hospitals.</p>
+  </div>
+ 
+  <div class="LS">
+    <p class="heading1" onclick="clicklogin()">Login/Sign-up</p><br><br>
+    <p class="sentence1">Patients get login/signup credentials to manage health; doctors have exclusive access.</p>
+  </div>
+
+  <div class="News">
+    <p class="heading1" onclick="clickhealth()">Health Update & news</p><br><br>
+    <p class="sentence1">Daily health news updates on latest technologies in healthcare sector</p>
+  </div>
+
+  <div class="Contact">
+    <p class="heading1">Contact us</p><br><br>
+    <p class="Emergency">Phone no:  <span class="dist" onclick="makeCall()">+91-7569374985</span><br>
+                         Email:  <span class="dist1" onclick="openGmail()">hrc6@gmail.com</span></p>
+  </div>
+
+  <script>
+    function clicklogin1()
+    {
+      window.location.href="http://127.0.0.1:5500/PatientLoginpage.html";
+    }
+    function clickhealth()
+    {
+      window.location.href="https://www.medicalnewstoday.com/";
+    }
+    function clickdoctor()
+    {
+      window.location.href="http://127.0.0.1:5500/doctor%20Credentials.html";
+    }
+    function clicklogin() {
+    let role = prompt("Please enter your role: Doctor or Patient").toLowerCase();
+
+    if (role === "doctor") {
+      window.location.href = "http://127.0.0.1:5500/doctor%20Credentials.html";
+    } else if (role === "patient") {
+      window.location.href = "http://127.0.0.1:5500/PatientLoginpage.html";
+    } else {
+      alert("Invalid input! Please enter either 'Doctor' or 'Patient'.");
+    }
+  }
+
+  function clickhealth() {
+    window.location.href = "https://www.medicalnewstoday.com/";
+  }
+
+  function makeCall() {
+  const confirmCall = confirm("Do you want to make a call to +91-7569374985?");
+  if (confirmCall) {
+    window.location.href = "tel:+917569374985";
+  }
+}
+
+function openGmail() {
+  window.open("https://mail.google.com/mail/u/0/?view=cm&fs=1&to=hrc6@gmail.com", "_blank");
+}
+
+  </script>
+</body>
+</html>

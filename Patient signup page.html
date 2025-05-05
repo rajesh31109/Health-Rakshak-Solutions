@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient signup Page</title>
+    <link rel="stylesheet" href="CSS folders/Patient signup.css">
+</head>
+
+<body>
+    <div class="signup-box" id="signup box">
+        <span class="cross-symbol1" onclick="closesignupBox()">&times;</span>
+        <h2 class="log-sentence1">Sign up</h2>
+        <p class="sen1">Already have an account? <span class="sign1"><a onclick="openSignUp()">Log in</a></span></p><br>
+        <button class="google1">Google <img class="logo1"  src="images/google logo.png"></button>
+        <button class="face-but1">Facebook<img class="face-logo1" src="images/facebook logo.png"></button><br><br>
+        <input type="text" class="name" placeholder="Full name">
+        <input type="date" class="date" placeholder="Date of birth"><br><br>
+        <input type="text" class="state" placeholder="State">
+        <input type="text" class="district" placeholder="district"><br><br>
+        <input type="text" class="Aadhar" placeholder="Aadhar Number">
+        <input type="text" class="number" placeholder="HRC card number"><br><br>
+        <input type="text" class="Address" placeholder="Permenant Address"><br><br>
+        <button class="Sign-button" onclick="signbut()">Sign-up</button>
+        </div>
+
+        <h2 class="log-sen1">Welcome <br>To Login Page --</h2>
+    <div class="track1">
+        <img class="mark-logo1" src="images/mark logo.png" alt="Mark Logo">
+        <b>Track the health Records</b>
+      </div>
+      <div class="track1">
+        <img class="mark-logo1" src="images/mark logo.png" alt="Mark Logo">
+        <b>Get the online appointment</b>
+      </div>
+      <div class="track1">
+        <img class="mark-logo1" src="images/mark logo.png" alt="Mark Logo">
+        <b>Healthcare Services at Your Doorstep</b>
+      </div>
+      <div class="track1">
+        <img class="mark-logo1" src="images/mark logo.png" alt="Mark Logo">
+        <b>Access Schemes via Website</b>
+      </div>
+      <div class="track1">
+        <img class="mark-logo1" src="images/mark logo.png" alt="Mark Logo">
+        <b>Scheduled Health Reminders by Phone</b>
+      </div>
+      <div class="track1">
+        <img class="mark-logo1" src="images/mark logo.png" alt="Mark Logo">
+        <b>Medicine Delievery</b>
+      </div>
+      <div class="track1">
+        <img class="mark-logo1" src="images/mark logo.png" alt="Mark Logo">
+        <b>Live Appointment Token Updates Reduce Crowd</b>
+      </div>
+
+        <script>
+         function closesignupBox() 
+        {
+            window.location.href = "http://127.0.0.1:5500/HomePage.html";
+        } 
+        function openSignUp()
+        {
+          window.location.href="http://127.0.0.1:5500/PatientLoginpage.html";
+        }
+        function signbut() {
+        // Get all input values
+        const name = document.querySelector('.name').value.trim();
+        const dob = document.querySelector('.date').value.trim();
+        const state = document.querySelector('.state').value.trim();
+        const district = document.querySelector('.district').value.trim();
+        const aadhar = document.querySelector('.Aadhar').value.trim();
+        const hrc = document.querySelector('.number').value.trim();
+        const address = document.querySelector('.Address').value.trim();
+
+        // Check if any field is empty
+        if (!name || !dob || !state || !district || !aadhar || !hrc || !address) {
+            alert("Please fill in all the details before signing up.");
+            return;
+        }
+
+        // Proceed to the next page if all fields are filled
+        window.location.href = "http://127.0.0.1:5500/PatientLoginpage.html";
+    }
+        </script>
+</body>
+</html>
